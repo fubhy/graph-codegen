@@ -22,6 +22,7 @@
     "prebuild": "rimraf dist",
     "build": "tsc",
     "postbuild": "cp package.json LICENSE README.md dist",
+    "dev": "yarn test --watch",
     "prewatch": "yarn build",
     "watch": "tsc --watch",
     "test": "jest --coverage",
