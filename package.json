@@ -18,7 +18,7 @@
     "url": "https://github.com/graphprotocol/graph-codegen/issues"
   },
   "scripts": {
-    "clean": "rimraf dist typedocs coverage",
+    "clean": "rimraf dist coverage",
     "prebuild": "rimraf dist",
     "build": "tsc",
     "postbuild": "cp package.json LICENSE README.md dist",
@@ -46,8 +46,7 @@
     "ts-jest": "^25.3.1",
     "ts-morph": "^7.0.2",
     "ts-node": "^8.8.2",
-    "typescript": "^3.8.3",
-    "yargs": "^15.3.1"
+    "typescript": "^3.8.3"
   },
   "husky": {
     "hooks": {
