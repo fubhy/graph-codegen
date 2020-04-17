@@ -22,9 +22,9 @@
     "prebuild": "rimraf dist",
     "build": "tsc",
     "postbuild": "cp package.json LICENSE README.md dist",
-    "prewatch": "cp package.json dist",
+    "prewatch": "yarn build",
     "watch": "tsc --watch",
-    "test": "jest",
+    "test": "jest --coverage",
     "format": "prettier --write src/{*,**/*}.ts",
     "lint": "yarn prettier --list-different src/{*,**/*}.ts",
     "typecheck": "tsc --noEmit",
@@ -68,5 +68,8 @@
       "js"
     ],
     "coverageDirectory": "coverage"
+  },
+  "dependencies": {
+    "@ethersproject/abi": "^5.0.0-beta.150"
   }
 }
